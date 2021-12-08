@@ -1,0 +1,17 @@
+
+---
+version: '3'
+services:
+  jupyter-notebook:
+    container_name: jupyter-notebook
+    image: gcr.io/kaggle-images/python
+    privileged: true
+    ports:
+    - 8888:8888
+    - 6006:6006
+    volumes:
+    - $PWD:/home/jupyter/G-Research-Crypto
+    environment:
+      - GRANT_SUDO=yes
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=token
