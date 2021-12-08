@@ -112,3 +112,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# 00_Data
+/00_Data/*
+!/00_Data/README.md
+
